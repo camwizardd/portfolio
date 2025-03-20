@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-left-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 67px;
+}
+
+.header-right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.header-language {
+  padding: 5px 9px;
+  background: var(--yellow);
+  color: var(--canard);
+}
