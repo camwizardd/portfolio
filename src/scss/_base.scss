@@ -22,6 +22,7 @@ h1 {
   font-family: Aalto;
   font-size: 96px;
   font-weight: 400;
+  z-index: 1;
 }
 
 h2 {
@@ -30,18 +31,21 @@ h2 {
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 h3 {
   font-family: "Advent Pro";
   font-size: 20px;
   font-weight: 500;
+  z-index: 1;
 }
 
 p {
   font-family: "Advent Pro";
   font-size: 20px;
   font-weight: 400;
+  z-index: 1;
 }
 
 :root {
@@ -53,4 +57,12 @@ p {
   --yellow: #f1a805;
   --chocolate: #6e4623;
   --chocolate-dark: #573a1f;
+}
+
+.picture-fixed-camille {
+  height: 93px;
+  width: 91px;
+  position: fixed;
+  top: 70%;
+  left: 45%;
 }

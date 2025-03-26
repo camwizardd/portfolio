@@ -3,3 +3,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.homepage-biography-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  p {
+    margin-bottom: 33px;
+    z-index: 1;
+  }
+}
+
+.hompepage-flower-tampon-container {
+  display: flex;
+  justify-content: end;
+  svg {
+    margin-bottom: 33px;
+  }
+}

@@ -1,0 +1,23 @@
+.music {
+  height: fit-content;
+}
+
+.music-container {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.music-description {
+  color: var(--canard, #12494d);
+  text-align: right;
+
+  /* big text */
+  font-family: "Advent Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

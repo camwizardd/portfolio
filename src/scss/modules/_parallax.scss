@@ -1,0 +1,15 @@
+.parallax,
+.parallax2,
+.parallax3 {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.parallax {
+  background-image: url("../img/flower-1-canard.png");
+  left: -1000px;
+}
