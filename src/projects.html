@@ -21,6 +21,7 @@
         alt="Camille enfant"
         class="fixed-camille"
       />
+      <div class="parallax4" data-speed="0.1"></div>
       <div class="header-projects">
         <extends src="header.html"></extends>
       </div>
@@ -56,7 +57,7 @@
         </div>
       </div>
     </div>
-    <div class="l-project-section-first">
+    <div class="project-section l-project-t-canard">
       <div class="container">
         <div class="row">
           <div class="col-11 offset-1">
@@ -77,10 +78,17 @@
                 "title":"Brouillard",
                 "number":"[1]",
                 "year":"2024",
-                "cont":"photographie prise",
                 "subject":"photo"
               }'
               >
+                <block name="cont"
+                  >Dans le silence ouaté du premier jour, la terre respire à
+                  peine. Le brouillard s'étire comme un drap sur les épaules du
+                  monde, et dans cette lumière d’or pâle, tout semble figé… ou
+                  en attente. Une tour se dresse, sentinelle muette, veillant
+                  sur les songes éteints de la nuit.</block
+                >
+
                 <block name="images">
                   <div class="col-12">
                     <img src="img/PH_2022_Brouillard3.jpg" alt="Brouillard" />
@@ -92,8 +100,51 @@
         </div>
       </div>
     </div>
-    <div class="project-section">
-      <div class="container-fluid">
+    <div class="project-section l-project-t-turquoise">
+      <div class="container">
+        <div class="row">
+          <div class="col-11 offset-1">
+            <div class="project-part">
+              <extends
+                src="project.html"
+                locals='{
+                "title":"Lieu",
+                "number":"[2]",
+                "year":"2022",
+                "subject":"photo"
+              }'
+              >
+                <block name="cont"
+                  >Dans le silence ouaté du premier jour, la terre respire à
+                  peine. Le brouillard s'étire comme un drap sur les épaules du
+                  monde, et dans cette lumière d’or pâle, tout semble figé… ou
+                  en attente. Une tour se dresse, sentinelle muette, veillant
+                  sur les songes éteints de la nuit.</block
+                >
+
+                <block name="images">
+                  <div class="project-images-container">
+                    <div class="col-12">
+                      <img src="img/PH_2022_Lieu.jpg" alt="Brouillard" />
+                    </div>
+                    <div class="project-bottom-images-container">
+                      <div class="col-6">
+                        <img src="img/PH_2022_Lieu2.jpg" alt="Brouillard" />
+                      </div>
+                      <div class="col-6">
+                        <img src="img/PH_2022_Lieu3.jpg" alt="Brouillard" />
+                      </div>
+                    </div>
+                  </div>
+                </block>
+              </extends>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-section l-project-t-green">
+      <div class="container">
         <div class="row">
           <div class="col-11 offset-1">
             <div class="project-part"></div>
@@ -101,8 +152,8 @@
         </div>
       </div>
     </div>
-    <div class="project-section">
-      <div class="container-fluid">
+    <div class="l-project-section l-project-t-beige">
+      <div class="container">
         <div class="row">
           <div class="col-11 offset-1">
             <div class="project-part"></div>
@@ -110,14 +161,9 @@
         </div>
       </div>
     </div>
-    <div class="project-section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-11 offset-1">
-            <div class="project-part"></div>
-          </div>
-        </div>
-      </div>
+
+    <div class="l-footer">
+      <extends src="footer.html"></extends>
     </div>
 
     <script src="js/main.js" type="module"></script>

@@ -19,7 +19,7 @@ document.addEventListener("scroll", function () {
 });
 
 document.addEventListener("scroll", function () {
-  const parallaxElements = document.querySelectorAll(".parallax3");
+  const parallaxElements = document.querySelectorAll(".parallax3, .parallax4");
 
   parallaxElements.forEach((element) => {
     const speed = parseFloat(element.getAttribute("data-speed"));

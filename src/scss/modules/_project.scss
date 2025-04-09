@@ -1,28 +1,55 @@
-.project {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .project-content {
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: flex-end;
   gap: 25px;
-  flex-shrink: 0;
-  align-self: stretch;
+}
+
+.project-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
 }
 
 .project-head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
 }
 
 .project-title {
   display: flex;
-  align-items: center;
   gap: 13px;
+}
+
+.project-images {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  height: 377;
+}
+
+.project-part {
+  margin-top: 170px;
+  margin-bottom: 150px;
+}
+
+.project-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-bottom-images-container {
+  display: flex;
+  gap: 10px;
 }

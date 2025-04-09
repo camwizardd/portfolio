@@ -1,6 +1,7 @@
 .parallax,
 .parallax2,
-.parallax3 {
+.parallax3,
+.parallax4 {
   position: absolute;
   width: 100%;
   aspect-ratio: 1;
@@ -29,5 +30,13 @@
   background-size: 500px;
   height: 900px;
   width: 500px;
+  top: 210%;
+}
+
+.parallax4 {
+  background-image: url("../img/flower-3-chocolate.png");
+  background-size: 300px;
+  height: 900px;
+  width: 300px;
   top: 210%;
 }
