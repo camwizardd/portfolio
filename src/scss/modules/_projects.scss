@@ -1,0 +1,45 @@
+.project-images {
+  img {
+    height: 377px;
+  }
+}
+
+.projects-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-head-intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+
+  p {
+    text-align: right;
+    margin-bottom: 75px;
+  }
+}
+
+.projects-flower-tampon-container {
+  display: flex;
+  justify-content: end;
+  svg {
+    margin-bottom: 33px;
+  }
+}
+
+.projects-filter {
+  display: flex;
+  width: 1021px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.projects-filter-container {
+  display: flex;
+  justify-content: end;
+}

@@ -4,9 +4,15 @@
   padding: 0;
 }
 
+html {
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  cursor: none;
 }
 
 img,
@@ -16,6 +22,7 @@ video {
 
 body {
   color: var(--yellow);
+  font-family: "Advent Pro";
 }
 
 h1 {
@@ -26,7 +33,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Advent Pro";
   font-size: 36px;
   font-weight: 400;
   line-height: 26px;
@@ -49,20 +55,14 @@ p {
 }
 
 :root {
-  --green: #aca356;
+  --green: #7d8146;
+  --green-dark: #666a3a;
   --turquoise: #9bbda4;
+  --turquoise-dark: #618269;
   --canard: #12494d;
   --canard-dark: #0a3f43;
   --beige: #f0d5a0;
   --yellow: #f1a805;
   --chocolate: #6e4623;
   --chocolate-dark: #573a1f;
-}
-
-.picture-fixed-camille {
-  height: 93px;
-  width: 91px;
-  position: fixed;
-  top: 70%;
-  left: 45%;
 }

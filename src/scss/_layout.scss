@@ -1,8 +1,29 @@
 .l-homepage-header {
   background-color: var(--canard);
   height: 100vh;
+  background-image: url(../img/texture-bg.png);
 }
 
 .l-music {
   background-color: var(--turquoise);
+  background-image: url(../img/texture-bg.png);
+}
+.l-highlight {
+  background-color: var(--green);
+  background-image: url(../img/texture-bg.png);
+}
+
+.l-footer {
+  background-color: var(--chocolate);
+  background-image: url(../img/texture-bg.png);
+}
+
+.l-projects-head {
+  background-color: var(--green);
+  height: 100vh;
+  background-image: url(../img/texture-bg.png);
+}
+
+.l-project-section-first {
+  background-color: var(--canard);
 }

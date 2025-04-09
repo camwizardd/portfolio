@@ -1,0 +1,13 @@
+.fixed-camille {
+  height: 93px;
+  width: 91px;
+  position: fixed;
+  top: 70%;
+  left: 45%;
+  transition: transform 0.5s;
+  z-index: 1000;
+}
+
+.fixed-camille:hover {
+  transform: rotateZ(360deg);
+}

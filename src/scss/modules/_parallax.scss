@@ -7,9 +7,27 @@
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 50%;
+  pointer-events: none;
 }
 
 .parallax {
   background-image: url("../img/flower-1-canard.png");
-  left: -1000px;
+  left: -50%;
+}
+
+.parallax2 {
+  background-image: url("../img/flower-2-canard.png");
+  background-size: 500px;
+  height: 900px;
+  width: 500px;
+  top: 165%;
+  left: 71.6%;
+}
+
+.parallax3 {
+  background-image: url("../img/flower-3-beige.png");
+  background-size: 500px;
+  height: 900px;
+  width: 500px;
+  top: 210%;
 }

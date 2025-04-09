@@ -1,16 +1,28 @@
-<div class="project">
-  <div class="project-content">
-    <div class="project-head">
-      <div class="project-title">
-        <h2>{{ title }}</h2>
-        <div class="project-number"><h2>{{ number }}</h2></div>
+<div class="container">
+  <div class="row">
+    <div class="col-11">
+      <div class="project">
+        <div class="project-content">
+          <div class="col-6">
+            <div class="project-head">
+              <div class="project-title">
+                <div class="project-number"><h2>{{ number }}</h2></div>
+                <h2>{{ title }}</h2>
+              </div>
+              <h2>{{ year }}</h2>
+            </div>
+            <div class="project-description">
+              <div class="project-description-content text">{{ cont }}</div>
+              <h2>{{ subject }}</h2>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="project-images">
+              <block name="images"></block>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2>{{ year }}</h2>
     </div>
-    <div class="project-description">
-      <div class="project-description-content text">{{ cont }}</div>
-      <h2>{{ subject }}</h2>
-    </div>
-    <div class="project-images"><img src="{{ mainimg }}" alt="{{ title }}"/><div class="project-image-supp"><img src="{{ secondimg }}" alt="{{ title }}"></div><img src="{{ thirdimg }}" alt="{{ title }}"></div></div>
   </div>
 </div>

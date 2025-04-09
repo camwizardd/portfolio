@@ -1,0 +1,41 @@
+.highlight {
+  color: var(--beige);
+}
+
+.highlight-title {
+  margin-top: 18px;
+  margin-bottom: 30px;
+  line-height: 64px;
+}
+
+.highlight-project {
+  overflow: hidden;
+}
+
+.highlight-project img {
+  width: 100%;
+  transform: scale(105%);
+  filter: blur(4px) grayscale(1);
+  transition: transform 0.9s, filter 0.5s;
+}
+
+.highlight-project img:hover {
+  transform: scale(110%);
+  filter: blur(0) grayscale(0);
+}
+
+.highlight a {
+  flex-shrink: 0;
+}
+
+.highlight-project-first {
+  margin-bottom: 17px;
+}
+
+.highlight-project-last {
+  margin-bottom: 130px;
+}
+
+.highlight-project-third {
+  margin-top: -50px;
+}
