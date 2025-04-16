@@ -30,3 +30,14 @@
     color: var(--green);
   }
 }
+
+.header-contact {
+  color: var(--canard);
+  path {
+    fill: var(--canard);
+  }
+  .header-language {
+    background-color: var(--canard);
+    color: var(--turquoise);
+  }
+}

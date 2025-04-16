@@ -32,7 +32,7 @@ document.addEventListener("mousemove", onMouseMove);
 
 var cursor = document.querySelector(".cursor");
 var links = document.querySelectorAll(
-  "a, .fixed-camille, .highlight-project, .homepage, .music, .highlight .l-footer, .l-project-head"
+  "a, .fixed-camille, .highlight-project, .homepage, .music, .highlight .l-footer, .l-project-head, .l-contact-head"
 );
 
 var onMouseMove = function (event) {
@@ -47,15 +47,13 @@ var onMouseEnter = function () {
     cursor.style.background = "#2C2828";
     cursor.style.width = "20px";
     cursor.style.height = "20px";
-  } else if (hoveredElement.closest(".homepage")) {
+  } else if (hoveredElement.closest(".homepage, .l-project-head")) {
     cursor.style.background = "#f1a805"; // yellow
-  } else if (hoveredElement.closest(".music")) {
+  } else if (hoveredElement.closest(".music, .l-contact-head")) {
     cursor.style.background = "#12494d"; // canard
   } else if (hoveredElement.closest(".highlight")) {
     cursor.style.background = "#f0d5a0"; // beige
   } else if (hoveredElement.closest(".l-footer")) {
-    cursor.style.background = "#f1a805"; // yellow
-  } else if (hoveredElement.closest(".l-project-head")) {
     cursor.style.background = "#f1a805"; // yellow
   } else {
     cursor.style.background = "#f1a805"; // yellow
