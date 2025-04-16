@@ -74,9 +74,31 @@ links.forEach((link) => {
   link.addEventListener("mouseleave", onMouseLeave);
 });
 
-document
-  .getElementById("backToTop")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+// document
+//   .getElementById("backToTop")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   });
+
+// const image = document.getElementById("imageCliquee");
+// const lightbox = document.getElementById("lightbox");
+// const lightboxImage = document.getElementById("lightbox-image");
+
+// image.addEventListener("click", () => {
+//   lightboxImage.src = image.src;
+//   lightbox.style.display = "flex";
+// });
+
+// // Fermer la lightbox en cliquant n’importe où
+// lightbox.addEventListener("click", () => {
+//   lightbox.style.display = "none";
+// });
+
+var projectExpand = document.querySelector(".project-images");
+
+var toggleMenu = function toggleMenu() {
+  projectExpand.classList.toggle("is-active");
+};
+
+projectExpand.addEventListener("click", toggleMenu);
