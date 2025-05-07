@@ -5,13 +5,13 @@
 }
 
 .projects-head {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .projects-head-intro {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -42,4 +42,5 @@
 .projects-filter-container {
   display: flex;
   justify-content: end;
+  margin-bottom: -40px;
 }

@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 10px;
+  gap: 20px;
 }
 
 .header-language {
@@ -40,4 +40,49 @@
     background-color: var(--canard);
     color: var(--turquoise);
   }
+}
+
+.mask {
+  position: relative;
+  padding: 0;
+  height: 96px;
+  overflow: hidden;
+}
+
+.link {
+  height: 100px;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.link-container {
+  transition: transform 0.4s ease;
+}
+
+.title {
+  display: block;
+  line-height: 96px;
+  transition: transform 0.4s ease;
+}
+
+.link-title1 {
+  transform-origin: right center;
+}
+
+.link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.link:hover .link-container {
+  transform: translateY(-96px);
+}
+
+.link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .link-title2 {
+  transform: rotate(0);
 }

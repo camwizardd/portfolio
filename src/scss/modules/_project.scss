@@ -70,20 +70,14 @@
   color: var(--chocolate);
 }
 
-.project-images {
-  transition: all 0.3s ease;
-  cursor: zoom-in;
+.project-part-t-green {
+  color: var(--green);
 }
 
-.project-images.is-active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90vw;
-  max-height: 90vh;
-  z-index: 1000;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  cursor: zoom-out;
+.project-images {
+  transition: all 0.3s ease;
+}
+
+.project-description-container {
+  height: 100%;
 }

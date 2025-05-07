@@ -6,7 +6,7 @@
   transition: background 0.5s, color 0.5s;
 }
 
-.button-container:hover {
+.button:hover {
   .button {
     color: var(--green);
     background: var(--beige);

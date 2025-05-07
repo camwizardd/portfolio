@@ -1,7 +1,9 @@
 .parallax,
 .parallax2,
 .parallax3,
-.parallax4 {
+.parallax4,
+.parallax5,
+.parallax6 {
   position: absolute;
   width: 100%;
   aspect-ratio: 1;
@@ -39,4 +41,22 @@
   height: 900px;
   width: 300px;
   top: 210%;
+}
+
+.parallax5 {
+  background-image: url("../img/roots_canard.png");
+  background-size: 900px;
+  height: 900px;
+  width: 900px;
+  left: 49%;
+  top: -10%;
+}
+
+.parallax6 {
+  background-image: url("../img/stars_green.png");
+  background-size: 800px;
+  background-repeat: no-repeat;
+  height: 1100px;
+  width: 800px;
+  left: -10%;
 }

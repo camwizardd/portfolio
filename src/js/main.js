@@ -1,5 +1,5 @@
 document.addEventListener("scroll", function () {
-  const parallaxElements = document.querySelectorAll(".parallax");
+  const parallaxElements = document.querySelectorAll(".parallax, .parallax6");
 
   parallaxElements.forEach((element) => {
     const speed = parseFloat(element.getAttribute("data-speed"));
@@ -19,7 +19,9 @@ document.addEventListener("scroll", function () {
 });
 
 document.addEventListener("scroll", function () {
-  const parallaxElements = document.querySelectorAll(".parallax3, .parallax4");
+  const parallaxElements = document.querySelectorAll(
+    ".parallax3, .parallax4, .parallax5"
+  );
 
   parallaxElements.forEach((element) => {
     const speed = parseFloat(element.getAttribute("data-speed"));
@@ -32,7 +34,7 @@ document.addEventListener("mousemove", onMouseMove);
 
 var cursor = document.querySelector(".cursor");
 var links = document.querySelectorAll(
-  "a, .fixed-camille, .highlight-project, .homepage, .music, .highlight .l-footer, .l-project-head, .l-contact-head"
+  "a, .fixed-camille, .highlight-project, .homepage, .music, .l-highlight .l-footer, .l-project-head, .l-contact-head, img, .section-footer, .l-contact-section"
 );
 
 var onMouseMove = function (event) {
@@ -40,27 +42,29 @@ var onMouseMove = function (event) {
   cursor.style.left = event.x + "px";
 };
 
+var previousColor = null;
+
 var onMouseEnter = function () {
   var hoveredElement = document.elementFromPoint(event.clientX, event.clientY);
+  previousColor = cursor.style.background;
 
-  if (hoveredElement.closest("a, .fixed-camille, .highlight-project")) {
+  if (hoveredElement.closest("a, .fixed-camille, .highlight-project, img")) {
     cursor.style.background = "#2C2828";
     cursor.style.width = "20px";
     cursor.style.height = "20px";
-  } else if (hoveredElement.closest(".homepage, .l-project-head")) {
+  } else if (hoveredElement.closest(".homepage, .l-project-head, .l-footer")) {
     cursor.style.background = "#f1a805"; // yellow
   } else if (hoveredElement.closest(".music, .l-contact-head")) {
     cursor.style.background = "#12494d"; // canard
-  } else if (hoveredElement.closest(".highlight")) {
+  } else if (hoveredElement.closest(".l-highlight, .l-contact-section")) {
     cursor.style.background = "#f0d5a0"; // beige
-  } else if (hoveredElement.closest(".l-footer")) {
-    cursor.style.background = "#f1a805"; // yellow
   } else {
     cursor.style.background = "#f1a805"; // yellow
   }
 };
 
 var onMouseLeave = function () {
+  cursor.style.background = previousColor;
   cursor.style.width = "30px";
   cursor.style.height = "30px";
 };
@@ -72,31 +76,17 @@ links.forEach((link) => {
   link.addEventListener("mouseleave", onMouseLeave);
 });
 
-// document
-//   .getElementById("backToTop")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-//   });
+document.querySelectorAll(".projects-filter h2").forEach((filter) => {
+  filter.addEventListener("click", () => {
+    const selected = filter.textContent.toLowerCase();
 
-// const image = document.getElementById("imageCliquee");
-// const lightbox = document.getElementById("lightbox");
-// const lightboxImage = document.getElementById("lightbox-image");
-
-// image.addEventListener("click", () => {
-//   lightboxImage.src = image.src;
-//   lightbox.style.display = "flex";
-// });
-
-// // Fermer la lightbox en cliquant n’importe où
-// lightbox.addEventListener("click", () => {
-//   lightbox.style.display = "none";
-// });
-
-var projectExpand = document.querySelector(".project-images");
-
-var toggleMenu = function toggleMenu() {
-  projectExpand.classList.toggle("is-active");
-};
-
-projectExpand.addEventListener("click", toggleMenu);
+    document.querySelectorAll(".project-section").forEach((section) => {
+      const category = section.getAttribute("data-category");
+      if (category === selected || selected === "tout") {
+        section.style.display = "";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  });
+});
